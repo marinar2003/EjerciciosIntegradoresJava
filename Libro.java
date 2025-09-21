@@ -38,7 +38,7 @@ public class Libro {
 	*/
 	
 	public boolean esLargo() {
-	    return this.paginas > 500;
+	    return this.paginas >= 500;
 	}
 	
 	public void mostrarInfo() {

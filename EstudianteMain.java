@@ -15,7 +15,7 @@ public class EstudianteMain {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Scanner teclado = new Scanner(System.in);
-		Estudiante[] estudiante = new Estudiante[3];
+		Estudiante[] estudiante = new Estudiante[10];
 		
 		// Variables para los cálculos
         int sumaNotas = 0;
