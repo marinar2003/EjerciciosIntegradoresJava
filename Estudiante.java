@@ -17,6 +17,7 @@ public class Estudiante {
 	private int edad, nota;
 	private Scanner teclado;
 	
+	/***
 	public Estudiante() {
 		// TODO Auto-generated constructor stub
 		teclado = new Scanner(System.in);
@@ -28,13 +29,16 @@ public class Estudiante {
 		nota = teclado.nextInt();
 		
 	}
+	*/
 	
 	// Constructor que recibe parámetros para inicializar los atributos
-    //public Estudiante(String nombre, int edad, int nota) {
-    //    this.nombre = nombre;
-    //    this.edad = edad;
-    //    this.nota = nota;
-	
+    public Estudiante(String nombre, int edad, int nota) {
+        this.nombre = nombre;
+        this.edad = edad;
+        this.nota = nota;
+    }
+    
+    
 	public void imprimir() {
 		System.out.println("Datos del alumno:");
 		System.out.println(" - Nombre:" + nombre);
@@ -57,31 +61,29 @@ public class Estudiante {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		Estudiante estudiante = new Estudiante();
+		//Estudiante estudiante = new Estudiante();
 		
+		//estudiante.imprimir();
+		//estudiante.estaAprobado();
 		
-		
-		estudiante.imprimir();
-		estudiante.estaAprobado();
-		
-		//Scanner teclado = new Scanner(System.in);
+		Scanner teclado = new Scanner(System.in);
 
         // Pedimos los datos en la clase principal (main)
 		
-        //System.out.println("Ingrese el nombre del alumno:");
-        //String nombreAlumno = teclado.next();
-        //System.out.println("Indique la edad de " + nombreAlumno + ":");
-        //int edadAlumno = teclado.nextInt();
-        //System.out.println("¿Cuál fue la nota obtenida por " + nombreAlumno + "?:");
-        //int notaAlumno = teclado.nextInt();
+        System.out.println("Ingrese el nombre del alumno:");
+        String nombreAlumno = teclado.next();
+        System.out.println("Indique la edad de " + nombreAlumno + ":");
+        int edadAlumno = teclado.nextInt();
+        System.out.println("¿Cuál fue la nota obtenida por " + nombreAlumno + "?:");
+        int notaAlumno = teclado.nextInt();
 
         // Creamos un objeto Estudiante pasándole los valores al constructor
 		
-        //Estudiante estudiante = new Estudiante(nombreAlumno, edadAlumno, notaAlumno);
+        Estudiante estudiante = new Estudiante(nombreAlumno, edadAlumno, notaAlumno);
 
         // Llamamos a los métodos del objeto para mostrar la información
 		
-        //estudiante.imprimir();
+        estudiante.imprimir();
 		
 		//Sugerencia Gemenini 1
 		
