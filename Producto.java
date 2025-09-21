@@ -15,7 +15,7 @@ Si no, muestra un mensaje de que no se encontró el producto.
 
 public class Producto {
 	
-	private String nombre, nombre2;
+	private String nombre;
 	private int precio, stock;
 
 	public Producto(String nombre, int precio, int stock) {
