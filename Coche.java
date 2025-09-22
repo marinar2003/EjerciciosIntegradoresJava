@@ -1,3 +1,4 @@
+import java.util.Random;
 /***
  * Clase Coche: Crea una clase Coche con los atributos marca, modelo y velocidad.
 
@@ -36,9 +37,13 @@ public class Coche {
     
 	public void acelerar() {
 			velocidad+=10;
-			
 		}
 	
+	public void acelerarAleatorio() {
+		 Random rand = new Random();
+	        int aceleracion = rand.nextInt(41) + 10; 
+	        this.velocidad += aceleracion;
+	}
 	
 	public void frenar() {
 		if (velocidad >=10) {
